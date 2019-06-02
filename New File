@@ -1,0 +1,13 @@
+<?php
+$sql = "SELECT * FROM test"
+ 
+$result = mysql_query($sql,$connect);
+ 
+$row = mysql_fetch_array($result);
+ 
+echo $row['name'].$row['age'];
+ 
+mysql_free_result($result); 
+mysql_cloWe($connect);
+?>
+
